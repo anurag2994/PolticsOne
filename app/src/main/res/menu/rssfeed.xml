@@ -1,0 +1,56 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="anurag.PoliticsOne.RSSFeed">
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_update"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_action_settings"
+        android:orderInCategory="150"
+        android:showAsAction="always"
+        android:title="@string/action_settings"/>
+
+    <item
+        android:id="@+id/action_clear"
+        android:showAsAction="collapseActionView"
+        android:title="@string/clearArticles"
+        />
+
+    <item
+        android:id="@+id/action_mark_all_read"
+        android:showAsAction="collapseActionView"
+        android:title="@string/markAllRead"/>
+
+    <item
+        android:id="@+id/action_lights_off_mode"
+        android:showAsAction="collapseActionView"
+        android:title="@string/toggleLightsOffMode"
+        />
+<!--
+    <item
+        android:id="@+id/action_go_to_top"
+        android:icon="@drawable/ic_action_collapse"
+        android:orderInCategory="50"
+        android:showAsAction="always"
+        android:title="@string/goToTop"
+        />
+-->
+    <item
+        android:id="@+id/action_stop_autosync_service"
+        android:showAsAction="never"
+        android:title="@string/stopAutosyncService"/>
+
+    <item
+        android:id="@+id/action_start_autosync_service"
+        android:showAsAction="never"
+        android:title="@string/startAutosyncService"/>
+
+
+</menu>

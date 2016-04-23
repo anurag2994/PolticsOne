@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/feed_list_item_source_size"
+        android:ellipsize="end"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="Headline Placeholder"
+        android:textColor="@color/AppPrimaryTextColor"
+        android:textSize="@dimen/feed_list_item_title_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="Date Placeholder"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/feed_list_item_source_size" />
+
+        <TextView
+            android:id="@+id/sourceTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="Source Placeholder"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/feed_list_item_source_size" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        style="@style/HorizontalLine"
+        android:layout_below="@android:id/text1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:alpha="0.1"
+        android:background="#999999" />
+
+    <TextView
+        android:id="@android:id/text2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:ellipsize="end"
+        android:lines="3"
+        android:text="Article Placeholder"
+        android:textColor="#CCCCCC"
+        android:textSize="@dimen/feed_list_item_description_size" />
+
+    <View
+        android:id="@+id/colorIndicator"
+        android:background="@drawable/circle_indicator_green"
+        android:layout_height="10dp"
+        android:layout_width="10dp"
+        android:visibility="visible"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignRight="@android:id/text1"
+        android:layout_alignEnd="@android:id/text1"/>
+
+</RelativeLayout>

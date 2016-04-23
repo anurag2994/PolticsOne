@@ -1,0 +1,68 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/AppDefaultBackgroundColor</item>
+    </style>
+
+    <style name="Widget.Styled.ActionBar" parent="android:Widget.Holo.ActionBar">
+        <item name="android:displayOptions">showHome|useLogo</item>
+        <item name="displayOptions">showHome|useLogo</item>
+        <item name="android:windowBackground">@color/ActionBarBackgroundColor</item>
+    </style>
+
+    <style name="RSSFeed" parent="AppTheme">
+
+        <!-- <item name="android:windowNoTitle">true</item> -->
+        <!-- <item name="android:windowBackground">@color/AppDefaultBackgroundColor</item> -->
+    </style>
+
+    <style name="ArticleView" parent="AppTheme">
+        <!-- <item name="android:windowTitleBackgroundStyle"></item> -->
+        <!-- For API 11+ -->
+        <!-- <item name="android:actionBarStyle"></item> -->
+    </style>
+
+    <style name="SettingsActivity" parent="AppTheme">
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar</item>
+    </style>
+
+    <style name="ModifySources" parent="AppTheme"></style>
+
+    <style name="HorizontalLine">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="SemiTransparentDialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowBackground">@color/SemiTransparentBlack</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="SourceToggleButton">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/AppPrimaryTextColor</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+</resources>

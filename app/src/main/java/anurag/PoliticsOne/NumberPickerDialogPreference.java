@@ -1,0 +1,29 @@
+package anurag.PoliticsOne;
+
+/**
+ * Created by root on 22/4/16.
+ */
+
+import android.content.Context;
+import android.content.DialogInterface;
+import android.preference.DialogPreference;
+import android.util.AttributeSet;
+import android.view.View;
+
+public class NumberPickerDialogPreference extends DialogPreference {
+
+    public NumberPickerDialogPreference(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        setDialogLayoutResource(R.layout.number_picker_dialog);
+    }
+
+    @Override
+    protected void onBindDialogView (View view) {
+        super.onBindDialogView(view);
+    }
+
+    @Override
+    public void onClick (DialogInterface dialog, int which) {
+        super.onClick(dialog, which);
+    }
+}
